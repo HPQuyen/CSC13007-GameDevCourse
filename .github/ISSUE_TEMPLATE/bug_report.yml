@@ -1,0 +1,54 @@
+name: Bug Report
+description: This is a bug report to help us improve the product
+title: "[Bug]: <title>"
+labels: ["bug"]
+assignees:
+  - ""
+body:
+  - type: markdown
+    attributes:
+      value: "## Thanks for taking the time to fill out this bug report!"
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description
+      value: |
+        **Bug Description**
+        <!-- A concise description about the bug! -->
+        
+        **Reproduce Steps**
+        <!-- How to reproduce the bug? -->
+        1. Do this
+        2. Do that
+        3. Wait a bit
+        4. ...
+        
+        **Screenshots**
+        <!-- If any, you could provide some pictures about the bug... -->
+        
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - PC
+        - Mobile
+        - Console
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      options:
+        - Windows
+        - Linux
+        - iOS
+        - Android
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Anything more?
