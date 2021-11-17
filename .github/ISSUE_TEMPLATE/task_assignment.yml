@@ -1,0 +1,27 @@
+name: Task Assignment
+description: This is a task assignment for developers
+title: "[Task]: <title>"
+labels: ["documentation", "enhancement"]
+assignees:
+  - ""
+body:
+  - type: markdown
+    attributes:
+      value: "## Your duty is not over!"
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Description
+      value: |
+        **Task Description**
+        <!-- A concise description about the task! -->
+        
+        **Screenshots**
+        <!-- If any, you could provide some pictures about the bug... -->
+        
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
