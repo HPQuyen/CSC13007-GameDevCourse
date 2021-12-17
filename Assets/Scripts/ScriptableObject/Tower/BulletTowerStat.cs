@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "WarriorTowerStat", menuName = GameData.GameName + "/TowerStat/BulletTower")]
+[CreateAssetMenu(fileName = "BulletTowerStat", menuName = GameData.GameName + "/TowerStat/BulletTower")]
 public class BulletTowerStat : TowerStat
 {
     [ReadOnly]

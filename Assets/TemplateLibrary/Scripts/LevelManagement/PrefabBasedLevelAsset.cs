@@ -7,6 +7,8 @@ public class PrefabBasedLevelAsset : LevelAsset
 {
     [SerializeField]
     private LevelController levelPrefab;
+    [SerializeField]
+    private Texture levelThumbnail;
 
     public override bool CanBeLoadedImmediately()
     {

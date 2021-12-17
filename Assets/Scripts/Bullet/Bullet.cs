@@ -8,7 +8,7 @@ public enum BulletType
     Soap,
     Mask,
     SanitizerSoap,
-    SanitizerAnitbody,
+    SanitizerAntibody,
     SanitizerMask,
     SoapAntibody,
     SoapMask,

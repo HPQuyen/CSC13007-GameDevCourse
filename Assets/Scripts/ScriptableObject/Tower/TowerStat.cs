@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class TowerStat : ScriptableObject
 {
+    public InteractionInfo towerInfo;
     public float activeRange;
     public float cooldownTime;
     public float constructPrice;

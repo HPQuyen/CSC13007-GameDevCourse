@@ -17,5 +17,10 @@ public enum TowerType
 }
 public abstract class Tower : MonoBehaviour
 {
-    
+    protected TowerStat mStat;
+    protected IInteraction mInteraction;
+
+    protected abstract void PerformMission();
+    protected abstract void StartLoopJob();
+    public virtual IInteraction GetInteraction() => mInteraction;
 }

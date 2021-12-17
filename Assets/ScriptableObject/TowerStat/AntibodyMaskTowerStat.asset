@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409565414a091e140871c16cae9ad3ed, type: 3}
+  m_Name: AntibodyMaskTowerStat
+  m_EditorClassIdentifier: 
+  towerInfo:
+    optionThumbnail: {fileID: -3998987246393458011, guid: 833c8387f779e98498019109655abfbd,
+      type: 3}
+    description: 
+  activeRange: 0
+  cooldownTime: 0
+  constructPrice: 0
+  destroyPrice: 0
+  towerType: 9
+  warriorType: 3

@@ -9,17 +9,14 @@ public enum WarriorType
     SoapAntibodyWarrior,
     AntibodyMaskWarrior
 }
-public class Warrior : MonoBehaviour
+public class Warrior : Entity
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnTakeDamage(float damage)
     {
-        
+        throw new System.NotImplementedException();
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void SetSpawnPosition(Vector3 position)
     {
-        
+        transform.position = position;
     }
 }
