@@ -4,9 +4,9 @@
 public class InteractionData
 {
     public Action action;
-    public InteractionInfo info;
+    public TowerInfo info;
 
-    public InteractionData(Action callback, InteractionInfo info)
+    public InteractionData(Action callback, TowerInfo info)
     {
         action = callback;
         this.info = info;

@@ -26,6 +26,8 @@ public class TowerInteractionUI : MonoBehaviour
     public void SetInteractions(IInteraction iInteraction)
     {
         mRadialLayoutGroup.RemoveAllLayoutElement();
+        if (iInteraction == null)
+            return;
         foreach (var item in iInteraction.GetInteractions())
         {
             var cell = mRadialLayoutGroup.CreateLayoutElement<InteractionCellUI>(Vector2.one * 2f);

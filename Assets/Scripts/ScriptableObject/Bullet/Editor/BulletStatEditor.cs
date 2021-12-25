@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(BulletStat))]
+[CustomEditor(typeof(BulletStat)), CanEditMultipleObjects]
 public class BulletStatEditor : Editor
 {
     private BulletStat data

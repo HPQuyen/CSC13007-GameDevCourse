@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: c0988d5b254f2da4ab2caaa5fc38b446
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3165414284165783371
+    second: TDGame-Tilesets-7_0
+  - first:
+      213: 3057707160533050721
+    second: TDGame-Tilesets-7_1
+  - first:
+      213: -6330520419774193996
+    second: TDGame-Tilesets-7_2
+  - first:
+      213: -7767732162606643040
+    second: TDGame-Tilesets-7_3
+  - first:
+      213: -5535604339445241375
+    second: TDGame-Tilesets-7_4
+  - first:
+      213: 987297850888641434
+    second: TDGame-Tilesets-7_5
+  - first:
+      213: -8112812434187885770
+    second: TDGame-Tilesets-7_6
+  - first:
+      213: -8375001860000916826
+    second: TDGame-Tilesets-7_7
+  - first:
+      213: 5319594268161364083
+    second: TDGame-Tilesets-7_8
+  - first:
+      213: 5004739811711066203
+    second: TDGame-Tilesets-7_9
+  - first:
+      213: 3321476134268459574
+    second: TDGame-Tilesets-7_10
+  - first:
+      213: 5908348682580381034
+    second: TDGame-Tilesets-7_11
+  - first:
+      213: 8540883452902866416
+    second: TDGame-Tilesets-7_12
+  - first:
+      213: 8592524053553230140
+    second: TDGame-Tilesets-7_13
+  - first:
+      213: 5829519020044127509
+    second: TDGame-Tilesets-7_14
+  - first:
+      213: -4837784703560460055
+    second: TDGame-Tilesets-7_15
+  - first:
+      213: 5280002676657097561
+    second: TDGame-Tilesets-7_16
+  - first:
+      213: 2576336157879158255
+    second: TDGame-Tilesets-7_17
+  - first:
+      213: -2633818206814481943
+    second: TDGame-Tilesets-7_18
+  - first:
+      213: -8605051166177642517
+    second: TDGame-Tilesets-7_19
+  - first:
+      213: -2319810526849801374
+    second: TDGame-Tilesets-7_20
+  - first:
+      213: 3584822464062902868
+    second: TDGame-Tilesets-7_21
+  - first:
+      213: -8983137329974622563
+    second: TDGame-Tilesets-7_22
+  - first:
+      213: -7032978155859230632
+    second: TDGame-Tilesets-7_23
+  - first:
+      213: 4252174347116770599
+    second: TDGame-Tilesets-7_24
+  - first:
+      213: -1338919235375926094
+    second: TDGame-Tilesets-7_25
+  - first:
+      213: 734901476839849714
+    second: TDGame-Tilesets-7_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 703
+        width: 153
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0e959ca703214d0800000000000000
+      internalID: -3165414284165783371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 704
+        width: 154
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165adba46782f6a20800000000000000
+      internalID: 3057707160533050721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 552
+        width: 292
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be900008397528a0800000000000000
+      internalID: -6330520419774193996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 637
+        width: 206
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a84479d0c8733490800000000000000
+      internalID: -7767732162606643040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_4
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 636
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e96142ae259d23b0800000000000000
+      internalID: -5535604339445241375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_5
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 639
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b59b91a2693bd00800000000000000
+      internalID: 987297850888641434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 531
+        width: 153
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633ebda1310896f80800000000000000
+      internalID: -8112812434187885770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 531
+        width: 154
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aad8655e2406cb80800000000000000
+      internalID: -8375001860000916826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_8
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 492
+        width: 89
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37056fe6dcef2d940800000000000000
+      internalID: 5319594268161364083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_9
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 408
+        width: 91
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b502b4ea758647540800000000000000
+      internalID: 5004739811711066203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_10
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 408
+        width: 99
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a520932f0481e20800000000000000
+      internalID: 3321476134268459574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 310
+        width: 358
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dc952b2dbaef150800000000000000
+      internalID: 5908348682580381034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_12
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 263
+        width: 235
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd7946bf30578670800000000000000
+      internalID: 8540883452902866416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_13
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 411
+        width: 55
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c313a000a17ce3770800000000000000
+      internalID: 8592524053553230140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_14
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 412
+        width: 33
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d0d11a9ac96e050800000000000000
+      internalID: 5829519020044127509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_15
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 410
+        width: 78
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8d57c917cbcdcb0800000000000000
+      internalID: -4837784703560460055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_16
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 306
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b0243b576564940800000000000000
+      internalID: 5280002676657097561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_17
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 306
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5c168e51cf0c320800000000000000
+      internalID: 2576336157879158255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_18
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 305
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1ddd3ab4cc27bd0800000000000000
+      internalID: -2633818206814481943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_19
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 304
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7bbed4e87b49880800000000000000
+      internalID: -8605051166177642517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 103
+        width: 202
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263e7e0ed906ecfd0800000000000000
+      internalID: -2319810526849801374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_21
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 102
+        width: 101
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4525f41b909dfb130800000000000000
+      internalID: 3584822464062902868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_22
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 104
+        width: 153
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96cf4e613c755380800000000000000
+      internalID: -8983137329974622563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_23
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 144
+        width: 77
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850cdea21a7d56e90800000000000000
+      internalID: -7032978155859230632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_24
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 144
+        width: 87
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7257cea2a02c20b30800000000000000
+      internalID: 4252174347116770599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_25
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 145
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4fa70ac043b6de0800000000000000
+      internalID: -1338919235375926094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TDGame-Tilesets-7_26
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 145
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fef2ffdff4e23a00800000000000000
+      internalID: 734901476839849714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
