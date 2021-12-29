@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c47c4edbcee64ab4778ac3b5b35d8, type: 3}
+  m_Name: ScriptableObjectReference
+  m_EditorClassIdentifier: Assembly-CSharp::GameReference/ScriptableObjectReference
+  listTowerStat:
+  - {fileID: 11400000, guid: 07847afd57546e8408777a55d794a130, type: 2}
+  - {fileID: 11400000, guid: 67b4e75b16943944a89e5ddd923f37fc, type: 2}
+  - {fileID: 11400000, guid: 1877cb0a2245ab048950cddd35a5b73a, type: 2}
+  - {fileID: 11400000, guid: 803ea9f7e458adf4baad45aa1ac9c5ad, type: 2}
+  - {fileID: 11400000, guid: 5a085a5f4195b2b478e386e99cfa90cf, type: 2}
+  - {fileID: 11400000, guid: a825a11784ed56e46af416447e739cb2, type: 2}
+  - {fileID: 11400000, guid: 02f56ce87ac20d24b84651ad2ab86ba6, type: 2}
+  - {fileID: 11400000, guid: a9b0ca1d3daad414782476f4644398a4, type: 2}
+  - {fileID: 11400000, guid: 8e94e00b3b55caa43947d2c729cff302, type: 2}
+  - {fileID: 11400000, guid: b258740b44914b441a35df5496b86ad7, type: 2}
