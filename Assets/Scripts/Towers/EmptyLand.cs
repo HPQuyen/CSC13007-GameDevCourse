@@ -11,7 +11,7 @@ public class EmptyLand : MonoBehaviour
     [SerializeField]
     private SpriteRenderer mSpriteRenderer;
 
-    private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.Antibody, TowerType.Mask };
+    private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.Mask };
 
     #if UNITY_EDITOR
     private void OnValidate()
@@ -31,9 +31,9 @@ public class EmptyLand : MonoBehaviour
     {
         var listInteractionData = new List<InteractionData>();
 
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < arrayTowerTypeUpgradeable.Length; i++)
         {
-            var towerStat = ScriptableObjectReference.instance.GetTowerStat(arrayTowerTypeUpgradeable[i]);
+            var towerStat = GameReference.Instance.prefabReference.GetTower(arrayTowerTypeUpgradeable[i]).stat;
             var data = new InteractionData(() => ConstructTowerCallback(towerStat), towerStat.towerInfo);
             listInteractionData.Add(data);
         }
@@ -41,11 +41,13 @@ public class EmptyLand : MonoBehaviour
     }
     private void ConstructTowerCallback(TowerStat towerStat)
     {
-        var tower = Instantiate(PrefabReference.instance.bulletTower, transform);
-        tower.transform.localPosition = Vector3.up;
+        var towerPrefab = GameReference.Instance.prefabReference.GetTower(towerStat.towerType);
+        var tower = Instantiate(towerPrefab, transform);
+        tower.transform.localScale = new Vector3(5.625f, 5.625f);
+        tower.transform.localPosition = Vector3.zero;
         tower.transform.DOLocalMoveY(tower.transform.localPosition.y + 1f, AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.OutBack);
-        tower.transform.DOScale(new Vector3(0.8f, 1.2f, 1f), AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Flash);
-        tower.Init(towerStat, mTowerInteractionUI);
+        tower.transform.DOScale(new Vector3(5.625f * 0.85f, 5.625f * 1.15f), AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Flash);
+        tower.Init(mTowerInteractionUI);
         Destroy(mSpriteRenderer);
         Destroy(this);
     }

@@ -4,8 +4,18 @@ using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PrefabReference", menuName = GameData.GameName + "/GameReference/PrefabReference")]
-public class PrefabReference : ScriptableSingleton<PrefabReference>
+public class PrefabReference : ScriptableObject
 {
-    public Tower warriorTower;
-    public Tower bulletTower;
+    [SerializeField]
+    private List<Tower> listTower = new List<Tower>();
+
+    public Tower GetTower(TowerType type)
+    {
+        foreach (var item in listTower)
+        {
+            if (item.stat.towerType == type)
+                return item;
+        }
+        return null;
+    }
 }

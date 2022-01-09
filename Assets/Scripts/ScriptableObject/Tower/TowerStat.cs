@@ -7,8 +7,8 @@ public abstract class TowerStat : ScriptableObject
     public TowerInfo towerInfo;
     public float activeRange;
     public float cooldownTime;
-    public float constructPrice;
-    public float destroyPrice;
+    public int constructPrice;
+    public int destroyPrice;
     public TowerType towerType;
 
     protected void OnValidate()

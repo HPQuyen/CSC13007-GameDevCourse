@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PathPoint
+  - Missile
   - PanelDetails
   - MainCharacter
   - LevelWarning
@@ -20,7 +21,7 @@ TagManager:
   - 
   - Background
   - Foreground
-  - 
+  - Obstacle
   - 
   - 
   - Enemy
@@ -41,7 +42,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - PostProcessingLayer
   m_SortingLayers:
   - name: Default
     uniqueID: 0

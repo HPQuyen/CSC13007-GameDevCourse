@@ -11,7 +11,8 @@ public enum LevelEventCode
 }
 public enum GameplayEventCode
 {
-    
+    OnChangedValueCoin,
+    OnChangedValueHeart
 }
 
 public class UnityParamEvent : UnityEvent<object[]> { }

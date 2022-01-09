@@ -30,7 +30,7 @@ public class TowerInteractionUI : MonoBehaviour
             return;
         foreach (var item in iInteraction.GetInteractions())
         {
-            var cell = mRadialLayoutGroup.CreateLayoutElement<InteractionCellUI>(Vector2.one * 2f);
+            var cell = mRadialLayoutGroup.CreateLayoutElement<InteractionCellUI>(Vector2.one * 3f);
             cell.Init(item);
             cell.gameObject.SetActive(false);
         }

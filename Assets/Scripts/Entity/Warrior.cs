@@ -19,4 +19,9 @@ public class Warrior : Entity
     {
         transform.position = position;
     }
+
+    protected override void OnDied()
+    {
+        throw new System.NotImplementedException();
+    }
 }

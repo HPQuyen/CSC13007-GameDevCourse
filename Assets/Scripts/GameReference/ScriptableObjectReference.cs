@@ -4,18 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ScriptableObjectReference", menuName = GameData.GameName + "/GameReference/ScriptableObjectReference")]
-public class ScriptableObjectReference : ScriptableSingleton<ScriptableObjectReference>
+public class ScriptableObjectReference : ScriptableObject
 {
-    [SerializeField]
-    private List<TowerStat> listTowerStat = new List<TowerStat>();
 
-    public TowerStat GetTowerStat(TowerType type)
-    {
-        foreach (var item in listTowerStat)
-        {
-            if (item.towerType == type)
-                return item;
-        }
-        return null;
-    }
 }
