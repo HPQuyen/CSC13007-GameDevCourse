@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781f7fb2525bbb4499580c43ca9c3008, type: 3}
   m_Name: PrefabReference
   m_EditorClassIdentifier: Assembly-CSharp::GameReference/PrefabReference
+  emptyLand: {fileID: 6295659771858804365, guid: 49fc692b20854b740b8d8a6f384be009,
+    type: 3}
   listTower:
   - {fileID: 4890791885218867187, guid: 8f2cde727228e4c4793e4d557a8d2112, type: 3}
   - {fileID: 5057606047017070912, guid: e1fa79ac1af56e9499fde074201d6b48, type: 3}

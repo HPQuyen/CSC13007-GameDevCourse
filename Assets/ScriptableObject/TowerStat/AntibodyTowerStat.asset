@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: AntibodyTowerStat
   m_EditorClassIdentifier: 
   towerInfo:
-    towerSprite: {fileID: 21300000, guid: 1ebe9d3ac5ce74f3589c006da297bdc7, type: 3}
-    towerThumbnail: {fileID: 6206486482405637384, guid: ab859fe95ac3d424a98b3c72c77c513b,
-      type: 3}
+    towerThumbnail: {fileID: 21300000, guid: 169d45648e00348038299fc345aa6b4f, type: 3}
     description: 
   activeRange: 0
   cooldownTime: 0
-  constructPrice: 0
-  destroyPrice: 0
+  constructPrice: 150
+  destroyPrice: 75
   towerType: 2
   warriorType: 0

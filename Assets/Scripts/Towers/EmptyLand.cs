@@ -13,6 +13,8 @@ public class EmptyLand : MonoBehaviour
 
     private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.Mask };
 
+    private CoinUI coinUI;
+
     #if UNITY_EDITOR
     private void OnValidate()
     {
@@ -25,6 +27,7 @@ public class EmptyLand : MonoBehaviour
 
     private void Awake()
     {
+        coinUI = FindObjectOfType<CoinUI>();
         mTowerInteractionUI.SetInteractions(CreateInteractions());
     }
     private IInteraction CreateInteractions()
@@ -41,13 +44,15 @@ public class EmptyLand : MonoBehaviour
     }
     private void ConstructTowerCallback(TowerStat towerStat)
     {
+        if (coinUI.CurrentCoin < towerStat.constructPrice)
+            return;
         var towerPrefab = GameReference.Instance.prefabReference.GetTower(towerStat.towerType);
         var tower = Instantiate(towerPrefab, transform);
         tower.transform.localScale = new Vector3(5.625f, 5.625f);
         tower.transform.localPosition = Vector3.zero;
         tower.transform.DOLocalMoveY(tower.transform.localPosition.y + 1f, AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.OutBack);
         tower.transform.DOScale(new Vector3(5.625f * 0.85f, 5.625f * 1.15f), AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Flash);
-        tower.Init(mTowerInteractionUI);
+        tower.Init(mTowerInteractionUI, coinUI);
         Destroy(mSpriteRenderer);
         Destroy(this);
     }

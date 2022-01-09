@@ -33,6 +33,6 @@ public class InteractionCellUI : MonoBehaviour
     {
         data = interactionData;
         mButton.onClick.AddListener(() => data.action?.Invoke());
-        mImage.sprite = interactionData.info.towerThumbnail;
+        mImage.sprite = interactionData.info == null ? interactionData.cancelSprite : interactionData.info.towerThumbnail;
     }
 }

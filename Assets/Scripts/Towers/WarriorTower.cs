@@ -14,8 +14,8 @@ public class WarriorTower : Tower
     {
         throw new System.NotImplementedException();
     }
-    public override void Init(TowerInteractionUI towerInteractionUI)
+    public override void Init(TowerInteractionUI towerInteractionUI, CoinUI coinUI)
     {
-        base.Init(towerInteractionUI);
+        base.Init(towerInteractionUI, coinUI);
     }
 }

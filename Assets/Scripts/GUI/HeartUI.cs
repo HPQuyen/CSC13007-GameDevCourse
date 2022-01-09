@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HeartUI : MonoBehaviour
 {
+    public static int MIN_HEART = 0;
+
     [SerializeField]
     private int maxHeart = 20;
     [SerializeField]
@@ -19,17 +21,13 @@ public class HeartUI : MonoBehaviour
         heartText.text = $"{currentHeart}/{maxHeart}";
         heartText.GetComponent<ContentSizeFitter>().SetLayoutHorizontal();
     }
-    private void OnEnable()
-    {
-        LevelEventHandler.AddNewActionEvent(GameplayEventCode.OnChangedValueHeart, OnChangedValueHeart);
-    }
 
-    private void OnChangedValueHeart(object[] param)
+    public void OnChangedValueHeart(int value)
     {
-        if (param == null && param.Length <= 0)
-            return;
-        var data = (int)param[0];
-        heartText.text = data.ToString();
+        if (value <= 0)
+            LevelEventHandler.Invoke(LevelEventCode.OnLoseLevel);
+        currentHeart = value;
+        heartText.text = $"{currentHeart}/{maxHeart}";
         heartText.GetComponent<ContentSizeFitter>().SetLayoutHorizontal();
     }
 }

@@ -22,9 +22,13 @@ public abstract class Tower : MonoBehaviour
     protected SpriteRenderer mSpriteRenderer;
     [SerializeField]
     protected TowerStat mStat;
+    [SerializeField]
+    protected Sprite cancelSprite;
+
     public TowerStat stat => mStat;
 
     protected TowerInteractionUI mTowerInteractionUI;
+    protected CoinUI coinUI;
 
     protected virtual void OnValidate()
     {
@@ -34,9 +38,25 @@ public abstract class Tower : MonoBehaviour
 
     protected abstract void PerformMission();
     protected abstract void StartLoopJob();
-    protected virtual IInteraction GetInteraction() => null;
-    public virtual void Init(TowerInteractionUI towerInteractionUI)
+    protected virtual IInteraction GetInteraction(){
+        var listInteractionData = new List<InteractionData>();
+        var data = new InteractionData(OnDestroyTower, cancelSprite);
+        listInteractionData.Add(data);
+        return new SimpleInteraction(listInteractionData);
+    }
+    protected virtual void OnDestroyTower()
     {
+        coinUI.OnChangedValueCoin(coinUI.CurrentCoin + mStat.destroyPrice);
+        var emptyLand = Instantiate(GameReference.Instance.prefabReference.emptyLand, ObjectHolder.Instance.transform);
+        emptyLand.transform.position = transform.parent.position;
+        emptyLand.transform.rotation = transform.parent.rotation;
+        Destroy(transform.parent.gameObject);
+        // TODO: Add effect here
+    }
+    public virtual void Init(TowerInteractionUI towerInteractionUI, CoinUI coinUI)
+    {
+        this.coinUI = coinUI;
+        this.coinUI.OnChangedValueCoin(coinUI.CurrentCoin - mStat.constructPrice);
         mTowerInteractionUI = towerInteractionUI;
         mTowerInteractionUI.SetInteractions(GetInteraction());
     }

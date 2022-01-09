@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PrefabReference", menuName = GameData.GameName + "/GameReference/PrefabReference")]
 public class PrefabReference : ScriptableObject
 {
+    public EmptyLand emptyLand;
+
     [SerializeField]
     private List<Tower> listTower = new List<Tower>();
 

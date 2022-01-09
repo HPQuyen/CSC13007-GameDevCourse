@@ -382,3 +382,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mSpriteRenderer: {fileID: 5057606047017070915}
   mStat: {fileID: 11400000, guid: b258740b44914b441a35df5496b86ad7, type: 2}
+  cancelSprite: {fileID: 21300000, guid: 1c4cc3242e0544967b6eb69d898a306c, type: 3}

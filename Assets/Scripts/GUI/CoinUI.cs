@@ -20,17 +20,11 @@ public class CoinUI : MonoBehaviour
         cointText.text = initialCoin.ToString();
         cointText.GetComponent<ContentSizeFitter>().SetLayoutHorizontal();
     }
-    private void OnEnable()
-    {
-        LevelEventHandler.AddNewActionEvent(GameplayEventCode.OnChangedValueCoin, OnChangedValueCoin);
-    }
 
-    private void OnChangedValueCoin(object[] param)
+    public void OnChangedValueCoin(int value)
     {
-        if (param == null && param.Length <= 0)
-            return;
-        var data = (int) param[0];
-        cointText.text = data.ToString();
+        currentCoin = value;
+        cointText.text = value.ToString();
         cointText.GetComponent<ContentSizeFitter>().SetLayoutHorizontal();
     }
 }
