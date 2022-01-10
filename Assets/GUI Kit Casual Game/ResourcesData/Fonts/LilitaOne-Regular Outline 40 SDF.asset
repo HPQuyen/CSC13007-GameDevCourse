@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hashCode: 2039561907
   material: {fileID: 7746803525459343344}
-  materialHashCode: 1270396336
+  materialHashCode: -1735846733
   m_Version: 1.1.0
   m_SourceFontFileGUID: 18656ef7a51c9493bbb7e0a789ec9bf7
   m_SourceFontFile_EditorRef: {fileID: 0}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
   m_FaceInfo:
+    m_FaceIndex: 0
     m_FamilyName: Lilita One
     m_StyleName: Regular
     m_PointSize: 40
@@ -1773,6 +1774,7 @@ MonoBehaviour:
   m_AtlasTextures:
   - {fileID: 6847327511464335406}
   m_AtlasTextureIndex: 0
+  m_IsMultiAtlasTexturesEnabled: 0
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
@@ -2558,6 +2560,7 @@ Texture2D:
   m_MipCount: 1
   m_IsReadable: 0
   m_IgnoreMasterTextureLimit: 0
+  m_IsPreProcessed: 0
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
   m_AlphaIsTransparency: 0
@@ -2587,7 +2590,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LilitaOne-Regular Outline 40 SDF Material
-  m_Shader: {fileID: 4800000, guid: 48bb5f55d8670e349b6e614913f9d910, type: 3}
+  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2611,13 +2614,15 @@ Material:
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
     - _Padding: 5
-    - _Stencil: 0
-    - _StencilComp: 8
+    - _Stencil: 1
+    - _StencilComp: 3
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
