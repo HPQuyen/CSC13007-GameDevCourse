@@ -15,7 +15,7 @@ public class StageController : MonoBehaviour
     #region Private Attributes
     private GameObject levelWarning;
     private GameObject panelDetails;
-    // private DetailsPanelController detailsPanel;
+    private DetailsPanelController detailsPanel;
     #endregion
 
     #endregion
@@ -23,8 +23,8 @@ public class StageController : MonoBehaviour
     private void Start()
     {
         levelWarning = GameObject.FindGameObjectWithTag("LevelWarning");
-        panelDetails = GameObject.FindGameObjectWithTag("PanelDetails");
-        // detailsPanel = panelDetails.GetComponent<DetailsPanelController>();
+        detailsPanel = DetailsPanelController.Instance;
+        panelDetails = detailsPanel.gameObject;
 
         if (isLocked)
         {

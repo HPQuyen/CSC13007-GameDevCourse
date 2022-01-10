@@ -24,35 +24,15 @@ public class VirusSpawner : MonoBehaviour
     #endregion
 
     #region Unity Functions
-    // Start is called before the first frame update
     void Start()
     {
-        // waveDelayTimer = waveDelayDefault;
-        spawnVirusDelayDefault = enemyWaves[currentWave].spawnDelay;
-        StartSpawningVirus();
+        StartCoroutine(CommonCoroutine.Delay(AnimationDuration.LONG, false, () =>
+        {
+            spawnVirusDelayDefault = enemyWaves[currentWave].spawnDelay;
+            StartSpawningVirus();
+        }));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //waveDelayTimer -= Time.deltaTime; 
-        
-        //if (waveDelayTimer <= 0f)
-        //{
-        //    spawnVirusDelayTimer -= Time.deltaTime;
-
-        //    if (spawnVirusDelayTimer <= 0f && spawnVirusCount < enemyWaves[currentWave].spawnAmount)
-        //    {
-        //        SpawningVirus();
-        //    }
-
-        //    if ((spawnVirusCount >= enemyWaves[currentWave].spawnAmount) 
-        //        && (currentWave + 1 < enemyWaves.Length))
-        //    {
-        //        NewEnemyWaveAdvanced();
-        //    }
-        //}
-    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
