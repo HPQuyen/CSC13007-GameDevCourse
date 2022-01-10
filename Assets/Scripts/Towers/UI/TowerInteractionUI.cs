@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Collider2D))]
-public class TowerInteractionUI : MonoBehaviour
+public class TowerInteractionUI : MonoBehaviour, IPointerDownHandler
 {
     public event Action onShowInteraction = delegate { };
     public event Action onCancelInteraction = delegate { };
@@ -51,7 +51,15 @@ public class TowerInteractionUI : MonoBehaviour
     {
         onPickAnInteraction?.Invoke(data);
     }
-    private void OnMouseDown()
+    //private void OnMouseDown()
+    //{
+    //    if (isShow)
+    //        OnCancelInteraction();
+    //    else
+    //        OnShowInteractionOption();
+    //}
+
+    public void OnPointerDown(PointerEventData eventData)
     {
         if (isShow)
             OnCancelInteraction();

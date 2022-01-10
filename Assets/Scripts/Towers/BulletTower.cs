@@ -25,6 +25,9 @@ public class BulletTower : Tower
             case TowerType.Mask:
                 bulletType = BulletType.Mask;
                 break;
+            case TowerType.SanitizerSoap:
+                bulletType = BulletType.SanitizerSoap;
+                break;
             default:
                 break;
         }
@@ -62,7 +65,7 @@ public class BulletTower : Tower
         bullet.onHitTarget += () =>
         {
             bullet.gameObject.SetActive(false);
-            mBulletPool.Return(bulletType, bullet);
+            Destroy(bullet.gameObject, AnimationDuration.SSHORT);
         };
         bullet.gameObject.SetActive(true);
         bullet.Shoot(direction.normalized);

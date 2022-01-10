@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039ffbbf8185ba948b63d74f470637a5, type: 3}
+  m_Name: VirusWaveLevel_1.3
+  m_EditorClassIdentifier: 
+  virus:
+  - {fileID: 1521363674488061184, guid: 9e5b20029ef0bd84fa766f0ba5ebfd61, type: 3}
+  - {fileID: 3371161815210605166, guid: 5b67273a2da84564cae47dcc88574ba0, type: 3}
+  - {fileID: 1087421194256445256, guid: c5f745a65c00fab4ebfa26e516d658fd, type: 3}
+  spawnAmount: 10
+  spawnDelay: 5
+  spawnInOneTime: 2

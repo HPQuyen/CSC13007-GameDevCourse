@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: SanitizerSoapTowerStat
   m_EditorClassIdentifier: 
   towerInfo:
-    towerSprite: {fileID: 21300000, guid: 1ebe9d3ac5ce74f3589c006da297bdc7, type: 3}
-    towerThumbnail: {fileID: 2634274880639010213, guid: 833c8387f779e98498019109655abfbd,
-      type: 3}
+    towerThumbnail: {fileID: 21300000, guid: 169d45648e00348038299fc345aa6b4f, type: 3}
     description: 
-  activeRange: 0
-  cooldownTime: 0
-  constructPrice: 0
-  destroyPrice: 0
+  activeRange: 5
+  cooldownTime: 3
+  constructPrice: 250
+  destroyPrice: 100
   towerType: 4
   bulletType: 3

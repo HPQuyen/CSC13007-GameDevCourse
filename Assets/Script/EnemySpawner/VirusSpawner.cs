@@ -29,6 +29,7 @@ public class VirusSpawner : MonoBehaviour
     {
         // waveDelayTimer = waveDelayDefault;
         spawnVirusDelayDefault = enemyWaves[currentWave].spawnDelay;
+        StartSpawningVirus();
     }
 
     // Update is called once per frame
@@ -51,6 +52,11 @@ public class VirusSpawner : MonoBehaviour
         //        NewEnemyWaveAdvanced();
         //    }
         //}
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, spawnRadius);
     }
     #endregion
 

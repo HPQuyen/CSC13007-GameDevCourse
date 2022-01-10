@@ -27,6 +27,8 @@ public class Virus : Entity, IFreezable
     protected EntityStat mStat;
     [SerializeField]
     protected SpriteRenderer mSpriteRenderer;
+    [SerializeField]
+    protected Collider2D mCollider2D;
 
     protected VirusState mState = VirusState.Walk;
     protected IVirusTarget attackTarget;
@@ -35,6 +37,8 @@ public class Virus : Entity, IFreezable
 
     protected virtual void Update()
     {
+        if (mState == VirusState.Died)
+            return;
         switch (mState)
         {
             case VirusState.Walk:
@@ -63,6 +67,8 @@ public class Virus : Entity, IFreezable
     
     public override void OnTakeDamage(float damage)
     {
+        if (mState == VirusState.Died)
+            return;
         var previousState = mState;
         mState = VirusState.TakeDamage;
         mAnimator.SetTrigger("OnHit");
@@ -90,14 +96,16 @@ public class Virus : Entity, IFreezable
     }
     protected override void OnDied()
     {
+        mCollider2D.enabled = false;
         mState = VirusState.Died;
-        mAnimator.Play("Died");
+        mAnimator.SetTrigger("OnDied");
         mLifeCircleEvent.NotifyOnDiedEvent();
-        Destroy(gameObject, AnimationDuration.SHORT);
+        StartCoroutine(CommonCoroutine.Delay(AnimationDuration.SHORT, false, () => gameObject.SetActive(false)));
+        //Destroy(gameObject, AnimationDuration.SHORT);
     }
     protected virtual void OnWalkState()
     {
-        if (mState == VirusState.TakeDamage || mState == VirusState.Died)
+        if (mState == VirusState.TakeDamage || mState == VirusState.Died || mState == VirusState.None)
             return;
 
         // TODO:

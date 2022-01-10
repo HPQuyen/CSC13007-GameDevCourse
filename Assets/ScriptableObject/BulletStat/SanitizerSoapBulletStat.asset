@@ -15,5 +15,7 @@ MonoBehaviour:
   targetTag: Enemy
   force: 10
   bulletType: 3
-  listKeys: 
-  listValues: []
+  listKeys: 0000000002000000
+  listValues:
+  - {fileID: 11400000, guid: f7872aefd75f5bb4f8f3186a806ad556, type: 2}
+  - {fileID: 11400000, guid: 42d2b040345373c44932d6420482a1f7, type: 2}

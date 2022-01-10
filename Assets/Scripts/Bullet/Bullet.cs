@@ -46,6 +46,9 @@ public class Bullet : MonoBehaviour
                 case BulletType.Mask:
                     ammunitionStrategy = gameObject.AddComponent<MaskAmmunitionStrategy>();
                     break;
+                case BulletType.SanitizerSoap:
+                    ammunitionStrategy = gameObject.AddComponent<SanitizerSoapAmmunitionStrategy>();
+                    break;
                 default:
                     break;
             }

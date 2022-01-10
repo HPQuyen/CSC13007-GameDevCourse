@@ -11,7 +11,7 @@ public class EmptyLand : MonoBehaviour
     [SerializeField]
     private SpriteRenderer mSpriteRenderer;
 
-    private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.Antibody, TowerType.Mask };
+    private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.SanitizerSoap, TowerType.Mask };
 
     private CoinUI coinUI;
 

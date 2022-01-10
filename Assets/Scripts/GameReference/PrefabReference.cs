@@ -10,6 +10,7 @@ public class PrefabReference : ScriptableObject
     public GameObject sanitizerBulletExplosionEffect;
     public GameObject soapBulletExplosionEffect;
     public GameObject maskBulletExplosionEffect;
+    public GameObject sanitizerSoapBulletExplosionEffect;
 
     [SerializeField]
     private List<Tower> listTower = new List<Tower>();

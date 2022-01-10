@@ -16,7 +16,7 @@ public class Lung : MonoBehaviour
         {
             var heartUI = FindObjectOfType<HeartUI>();
             heartUI.OnChangedValueHeart(heartUI.CurrentHeart - 1);
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }
