@@ -19,11 +19,13 @@ public abstract class Entity : MonoBehaviour, IDamageable
     [SerializeField]
     protected AIPath mAIPath;
     [SerializeField]
+    protected Seeker mSeeker;
+    [SerializeField]
     protected AIDestinationSetter mAIDestinationSetter;
     [SerializeField]
     protected Health mHealth;
 
-    protected EntityLifeCircleEvent mLifeCircleEvent;
+    protected EntityLifeCircleEvent mLifeCircleEvent = new EntityLifeCircleEvent();
     public EntityLifeCircleEvent LifeCircleEvent => mLifeCircleEvent;
     //protected IAttackStrategy mAttackStrategy;
 

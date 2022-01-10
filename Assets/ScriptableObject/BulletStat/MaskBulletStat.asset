@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0921712da9ba54f44a0fc89cb95b0093, type: 3}
   m_Name: MaskBulletStat
   m_EditorClassIdentifier: 
+  targetTag: Enemy
+  force: 10
   bulletType: 2
-  listKeys: 
-  listValues: []
+  listKeys: 03000000
+  listValues:
+  - {fileID: 11400000, guid: 8e0664525d7a2814782f80af72a4d881, type: 2}

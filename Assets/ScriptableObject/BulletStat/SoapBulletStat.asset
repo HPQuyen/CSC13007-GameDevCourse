@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0921712da9ba54f44a0fc89cb95b0093, type: 3}
   m_Name: SoapBulletStat
   m_EditorClassIdentifier: 
+  targetTag: Enemy
+  force: 10
   bulletType: 1
-  listKeys: 
-  listValues: []
+  listKeys: 0200000000000000
+  listValues:
+  - {fileID: 11400000, guid: 9f90ff60fda547f42bf4b1d6fe87a346, type: 2}
+  - {fileID: 11400000, guid: f8c0cae6ebdf9414e93b2a9ee83b9b3e, type: 2}

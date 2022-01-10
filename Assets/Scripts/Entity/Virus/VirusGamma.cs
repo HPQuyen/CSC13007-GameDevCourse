@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class VirusGamma : Virus
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void OnAttackState()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (attackTarget == null || attackTarget.IsDied())
+        {
+            mState = VirusState.Walk;
+            return;
+        }
+        mState = VirusState.None;
     }
 }

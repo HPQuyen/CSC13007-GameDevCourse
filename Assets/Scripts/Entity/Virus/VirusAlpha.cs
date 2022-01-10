@@ -4,5 +4,12 @@ using UnityEngine;
 
 public class VirusAlpha : Virus
 {
-    
+    protected override void OnAttackState() {
+        if(attackTarget == null || attackTarget.IsDied())
+        {
+            mState = VirusState.Walk;
+            return;
+        }
+        mState = VirusState.None;
+    }
 }

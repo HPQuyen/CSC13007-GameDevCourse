@@ -27,6 +27,7 @@ public abstract class Tower : MonoBehaviour
 
     public TowerStat stat => mStat;
 
+    protected bool isActivate = false;
     protected TowerInteractionUI mTowerInteractionUI;
     protected CoinUI coinUI;
 
@@ -35,14 +36,26 @@ public abstract class Tower : MonoBehaviour
         if (mSpriteRenderer == null)
             mSpriteRenderer = GetComponent<SpriteRenderer>();
     }
+    protected void Update()
+    {
+        StartLoopJob();
+    }
 
-    protected abstract void PerformMission();
     protected abstract void StartLoopJob();
+    public virtual void Activate() => isActivate = true;
+    public virtual void Init(TowerInteractionUI towerInteractionUI, CoinUI coinUI)
+    {
+        this.coinUI = coinUI;
+        this.coinUI.OnChangedValueCoin(coinUI.CurrentCoin - mStat.constructPrice);
+        mTowerInteractionUI = towerInteractionUI;
+        mTowerInteractionUI.SetInteractions(GetInteraction());
+    }
     protected virtual IInteraction GetInteraction(){
-        var listInteractionData = new List<InteractionData>();
-        var data = new InteractionData(OnDestroyTower, cancelSprite);
-        listInteractionData.Add(data);
-        return new SimpleInteraction(listInteractionData);
+        //var listInteractionData = new List<InteractionData>();
+        //var data = new InteractionData(OnDestroyTower, cancelSprite);
+        //listInteractionData.Add(data);
+        //return new SimpleInteraction(listInteractionData);
+        return null;
     }
     protected virtual void OnDestroyTower()
     {
@@ -52,12 +65,5 @@ public abstract class Tower : MonoBehaviour
         emptyLand.transform.rotation = transform.parent.rotation;
         Destroy(transform.parent.gameObject);
         // TODO: Add effect here
-    }
-    public virtual void Init(TowerInteractionUI towerInteractionUI, CoinUI coinUI)
-    {
-        this.coinUI = coinUI;
-        this.coinUI.OnChangedValueCoin(coinUI.CurrentCoin - mStat.constructPrice);
-        mTowerInteractionUI = towerInteractionUI;
-        mTowerInteractionUI.SetInteractions(GetInteraction());
     }
 }

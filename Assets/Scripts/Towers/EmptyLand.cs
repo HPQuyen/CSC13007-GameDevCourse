@@ -11,7 +11,7 @@ public class EmptyLand : MonoBehaviour
     [SerializeField]
     private SpriteRenderer mSpriteRenderer;
 
-    private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.Mask };
+    private static TowerType[] arrayTowerTypeUpgradeable = new TowerType[] { TowerType.Sanitizer, TowerType.Soap, TowerType.Antibody, TowerType.Mask };
 
     private CoinUI coinUI;
 
@@ -51,7 +51,7 @@ public class EmptyLand : MonoBehaviour
         tower.transform.localScale = new Vector3(5.625f, 5.625f);
         tower.transform.localPosition = Vector3.zero;
         tower.transform.DOLocalMoveY(tower.transform.localPosition.y + 1f, AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.OutBack);
-        tower.transform.DOScale(new Vector3(5.625f * 0.85f, 5.625f * 1.15f), AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Flash);
+        tower.transform.DOScale(new Vector3(5.625f * 0.85f, 5.625f * 1.15f), AnimationDuration.TINY).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Flash).OnComplete(tower.Activate);
         tower.Init(mTowerInteractionUI, coinUI);
         Destroy(mSpriteRenderer);
         Destroy(this);

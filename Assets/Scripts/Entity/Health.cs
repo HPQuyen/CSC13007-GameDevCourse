@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
+[RequireComponent(typeof(Collider2D))]
 public class Health : MonoBehaviour
 {
     public Action onDied;

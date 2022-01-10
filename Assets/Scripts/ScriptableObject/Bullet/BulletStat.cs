@@ -6,6 +6,8 @@ using UnityEngine.Timeline;
 [CreateAssetMenu(fileName = "BulletStat", menuName = GameData.GameName + "/BulletStat")]
 public class BulletStat : ScriptableObject, ISerializationCallbackReceiver
 {
+    public string targetTag = "Enemy";
+    public float force = 10f;
     public BulletType bulletType;
     public Dictionary<BulletAbilityStatType, BulletAbilityStat> dictionaryAbilityStats = new Dictionary<BulletAbilityStatType, BulletAbilityStat>();
 

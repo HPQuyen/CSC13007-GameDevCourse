@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PathPoint
   - Missile
+  - Enemy
   - PanelDetails
   - MainCharacter
   - LevelWarning
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1740176419
+    locked: 0
+  - name: Bullet
+    uniqueID: 3612288975
     locked: 0

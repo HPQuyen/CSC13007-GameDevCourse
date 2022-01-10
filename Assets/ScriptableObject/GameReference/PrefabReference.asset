@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameReference/PrefabReference
   emptyLand: {fileID: 6295659771858804365, guid: 49fc692b20854b740b8d8a6f384be009,
     type: 3}
+  sanitizerBulletExplosionEffect: {fileID: 0}
+  soapBulletExplosionEffect: {fileID: 4648867705593338622, guid: 7f7a437ca390cf947b53779d4ba523de,
+    type: 3}
+  maskBulletExplosionEffect: {fileID: 1418498643571025656, guid: 0c8fee05f3b11bb47854800ca15482ad,
+    type: 3}
   listTower:
   - {fileID: 4890791885218867187, guid: 8f2cde727228e4c4793e4d557a8d2112, type: 3}
   - {fileID: 5057606047017070912, guid: e1fa79ac1af56e9499fde074201d6b48, type: 3}
   - {fileID: 2407556198930535898, guid: 7f4c271297af7004d865e9abe0719f10, type: 3}
+  - {fileID: 6036060758801445011, guid: b9814ef94a31dc2419f98b318051db57, type: 3}

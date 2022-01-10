@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0921712da9ba54f44a0fc89cb95b0093, type: 3}
   m_Name: SanitizerBulletStat
   m_EditorClassIdentifier: 
+  targetTag: Enemy
+  force: 10
   bulletType: 0
   listKeys: 00000000
   listValues:

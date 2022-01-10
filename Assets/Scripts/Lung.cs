@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Lung : MonoBehaviour
 {
+    public Transform destination;
+
     private void Start()
     {
         
-
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var heartUI = FindObjectOfType<HeartUI>();
-        heartUI.OnChangedValueHeart(heartUI.CurrentHeart - 1);
+        if (other.CompareTag("Enemy"))
+        {
+            var heartUI = FindObjectOfType<HeartUI>();
+            heartUI.OnChangedValueHeart(heartUI.CurrentHeart - 1);
+            Destroy(other.gameObject);
+        }
     }
 }

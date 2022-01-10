@@ -7,6 +7,9 @@ using UnityEngine;
 public class PrefabReference : ScriptableObject
 {
     public EmptyLand emptyLand;
+    public GameObject sanitizerBulletExplosionEffect;
+    public GameObject soapBulletExplosionEffect;
+    public GameObject maskBulletExplosionEffect;
 
     [SerializeField]
     private List<Tower> listTower = new List<Tower>();
